@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Date Excluder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p>Weekday of usual sessions:</p>
+  <select id="weekday">
+      <option value="0">Sunday</option>
+      <option value="1">Monday</option>
+      <option value="2">Tuesday</option>
+      <option value="3">Wednesday</option>
+      <option value="4">Thursday</option>
+      <option value="5">Friday</option>
+      <option value="6">Saturday</option>
+  </select>
+
+  <p> Days they will be out, separated by commas:</p>
+
+  <input
+    type="text"
+    id="outDays"
+    placeholder="6-22, 7-13">
+
+  <button id="run">Generate Dates</button>
+
+  <h2>Dates They Will Be Coming</h2>
+  <p>Days between June 1st through August 21st</p>
+  <ul id="results"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
